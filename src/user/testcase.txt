@@ -1,0 +1,34 @@
+### Unit test
+TEST TRUE
+## login
+  ขึ้นต้นตัวตัวพิมใหญ่
+  ขึ้นต้นด้วยพิมเล็ก
+  มีช่องว่างใน
+## sigiup
+    #นักศึกษา
+        Name ไม่ใช่ค่าว่าง 
+        student id ขึ้นต้นด้วยพิมเล็ก เเละครบ
+        student id ขึ้นต้นตัวตัวพิมใหญ่ เเละครบ
+        password มากกว่า 6 ตัว
+        type != สถานะผู้ใช้งาน
+    #ohter
+        Name ไม่ใช่ค่าว่าง
+        ไม่ใช่นักศึกษา เเละ มากกว่า  5 ตัว
+        type != สถานะผู้ใช้งาน
+        password มากกว่า 6 ตัว
+
+FALSE TEST
+## login
+    ขึ้นต้นด้วยตัวเลข
+    ช่องว่างตัวเเรก   bug
+    ช่องว่างตอนท้าย   bug 
+## signup
+    #นักศึกษา
+        Name null
+        type == สถานะผู้ใช้งาน
+        student_id null
+        password == null
+
+        Name มีช่องว่าง
+        student_id มีช่องว่าง
+        password มีช่องว่าง
